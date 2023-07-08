@@ -1,4 +1,4 @@
-module.exports = [
+const products = [
   {
     id: '1',
     description: 'MacBook Pro',
@@ -10,3 +10,11 @@ module.exports = [
     price: 5999.99,
   },
 ];
+
+function getAllProducts() {
+  return products;
+}
+
+module.exports = {
+  getAllProducts,
+};
